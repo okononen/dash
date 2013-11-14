@@ -1,0 +1,65 @@
+<html>
+    <head>
+    <title>Developer Dashboard</title>
+    <link rel="stylesheet" type="text/css" href="http://claw.cs.uwaterloo.ca/~okononen/css/landing.css">
+        <link rel="stylesheet" type="text/css" href="http://claw.cs.uwaterloo.ca/~okononen/css/form.css">
+    
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js" type="text/javascript"></script>
+        <script type="text/javascript" src="http://claw.cs.uwaterloo.ca/~okononen/js/my_ga.js" async></script>
+        <script src="http://claw.cs.uwaterloo.ca/~okononen/js/tracking.js" type="text/javascript"></script>
+        <script src="http://claw.cs.uwaterloo.ca/~okononen/js/geturlparam.js" type="text/javascript"></script>
+        <script src="http://claw.cs.uwaterloo.ca/~okononen/js/contentloading.js" type="text/javascript"></script>
+
+        <!-- Tooltip related stuff -->
+        <link type="text/css" rel="stylesheet" href="http://claw.cs.uwaterloo.ca/~okononen/css/jquery.qtip.min.css" />
+        <link type="text/css" rel="stylesheet" href="http://claw.cs.uwaterloo.ca/~okononen/css/qtip.font.css" />
+        <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/qtip2/2.1.1/jquery.qtip.min.js"></script>
+        <!-- more stuff in contentloading.js -->
+        <!-- End of Tooltip related stuff -->
+   <head>
+
+<body>
+<header>Dashboard for 
+    <script>
+        user = GetUrlValue('username');
+    //  product = GetUrlValue('product');
+        periodInDays = GetUrlValue('length');
+        userFriendlyPeriod = ""
+        switch (periodInDays)
+        {
+            case "1":
+                userFriendlyPeriod = "1 day";
+                break;
+            case "3":
+                userFriendlyPeriod = "3 days";
+                break;
+            case "7":
+                userFriendlyPeriod = "week";
+                break;
+            case "14":
+                userFriendlyPeriod = "2 weeks";
+                break;
+            case "30":
+                userFriendlyPeriod = "month";
+                break;
+            case "365":
+                userFriendlyPeriod = "year";
+                break;
+            default :
+                userFriendlyPeriod = "#incorrect value#";
+        }
+        //start_date = GetUrlValue('start');
+        //end_date = GetUrlValue('end');
+
+    //    document.write(user + " for " + product + " component for the last " + userFriendlyPeriod)
+        document.write(user + " for the last " + userFriendlyPeriod)
+    </script>
+</header>
+
+<div id="main" class="two">  
+    Loading content, please wait...
+    <img src="css/loading.gif" alt="loading..">
+</div>
+
+</body>
+</html>

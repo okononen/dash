@@ -1,0 +1,54 @@
+<html>
+
+<head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+    <meta content="utf-8" http-equiv="encoding">
+	<title>Developer Dashboard (Elasticsearch version)</title>
+	<link rel="stylesheet" type="text/css" href="css/landing.css">  
+	<link rel="stylesheet" type="text/css" href="css/form.css">
+	<link rel="icon" type="image/png" href="css/favicon.ico">
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js" type="text/javascript"></script>
+    <!-- <script type="text/javascript" src="js/my_ga.js" async></script>
+	<script src="js/tracking.js" type="text/javascript"></script> -->
+
+</head>
+<body> 
+<header>
+
+<form id='form1' action="dash.html" method="get" target="_blank">
+	<fieldset class="login">
+		<legend>Dashboard Details</legend> <br>
+		<label for="username">Username (email)</label> <input type="text" name="username" id="username" value="dao@mozilla.com" onfocus="value=''" />		
+        <label for="length">Period</label>
+        <select id="length" name="length">
+            <option value="1">  last 24 hours</option>
+            <option value="3">  last 3 days</option>
+            <option value="7">  last week</option>
+            <option value="14"> last 2 weeks</option>
+            <option value="30"> last month</option>
+            <option value="365">last year</option>
+        </select>
+		<br/>		
+	</fieldset>
+	<span style="font-size: x-small; ">Note: The data was taken from <a href="http://people.mozilla.org/~mhoye/bugzilla/"> public domain</a>. It contains bugs' info upunitl Oct 10, 2013.</span>
+	<input type="submit" id="form_submit" value="" class="button" />
+</form>
+
+<div style="width:600px; padding:2cm 0.5cm">
+    <h3> About this project: </h3>
+    <p>Dash is a project led by <a href="https://cs.uwaterloo.ca/~obaysal/">Olga Baysal</a> from the University of Waterloo to help provide Mozilla developers with customized dashboards that summarize their current Bugzilla issues. The project was started after investigating the <a href="https://wiki.mozilla.org/Bugzilla_Anthropology">Mozilla Anthropology</a> interviews. The project is in active development; if you have any questions, comments, or suggestions, please <a href="mailto:obaysal@uwaterloo.ca?Subject=Feedback%20on%20Developer%20Dash" target="_top">get in touch</a>. <br></p>
+
+    <p>The most related article relevant to this project is <a href='developer_dash_ieeesoft13.pdf' onClick="_gaq.push(['_trackEvent', 'Downloads', 'pdf']);" target="_blank">here</a>.<br></p>
+
+    <p>Our analysis of the Mozilla Anthropology Interviews is <a href="http://www.cs.uwaterloo.ca/research/tr/2012/CS-2012-10.pdf">here</a>.</p>
+
+    <p>The original version of this dashboard, which relies on Bugzilla REST API, can be found <a href="http://claw.cs.uwaterloo.ca/dash">here</a>.</p>
+
+    <p>This version was created by <a href="https://cs.uwaterloo.ca/~okononen">Oleksii Kononenko</a>.</p>
+</div>
+
+</header>
+    
+</body>
+</html>
+     

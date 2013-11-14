@@ -1,0 +1,14 @@
+{
+	"bugs":{
+        "host":"http://129.97.26.17",
+		"port":"9200",
+		"index":"bugs",
+		"type":"bug_version"
+	},
+	"comments":{
+		"host":"http://129.97.26.17",
+		"port":"9200",
+		"index":"comments",
+		"type":"bug_comment"
+	}
+}

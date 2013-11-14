@@ -1,0 +1,73 @@
+form {
+	background:#fff;
+	padding:0em;
+}
+fieldset div {
+	margin:0.3em 0;
+	clear:both;
+}
+form {
+	margin:1em;
+	width:23em;
+}
+.login label {
+	float:left;
+	width:10em;
+	text-align:right;
+	margin-right:1em;
+	font-size:1em;
+
+}
+legend {
+	color:#0b77b7;
+	font-size:1.2em;
+}
+legend span {
+	width:10em;
+	text-align:right;
+}
+input {
+	padding:0.15em;
+	width:10em;
+	border:1px solid #ddd;
+	background:#fafafa;
+	font:bold 0.95em arial, sans-serif;
+	-moz-border-radius:0.4em;
+	-khtml-border-radius:0.4em;
+	color:#ccc;
+}
+input:hover, input:focus {
+	border-color:#c5c5c5;
+	background:#f6f6f6;
+	color:#000;
+	font: bold 0.95em arial,sans-serif;
+} 
+fieldset {
+	border:1px solid #ddd;
+	padding:0 0.5em 0.5em;
+}
+
+input.default {
+	color:#bbb;
+}
+
+
+.button {
+    border: none;
+    margin-top: 1em;
+    width:130px;
+    height:40px;    
+    background: url('button_up.png') no-repeat top right;
+/*	background: url('button_up.png') 0px -29px no-repeat;*/
+    padding: 2px 8px;
+    display:block;
+    margin:8px auto;
+    
+}
+
+.button:hover {
+    border: none;
+    background: url('button_down.png') no-repeat top right;
+    padding: 2px 8px;
+}
+
