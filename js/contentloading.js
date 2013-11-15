@@ -2,7 +2,7 @@ function callAjax (){
     params = window.location.search;
     $.ajax({
         type: "GET",
-        url: "http://claw.cs.uwaterloo.ca/~okononen/cgi-bin/dash.py" + params,
+        url: "cgi-bin/dash.py" + params,
         cache: "false",
         success: function (response) {
             document.getElementById('main').innerHTML = response;
