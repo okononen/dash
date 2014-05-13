@@ -2,7 +2,6 @@
 import calendar
 from string import Template
 from time import gmtime
-from time import mktime
 from datetime import datetime
 from datetime import timedelta
 import time
@@ -28,7 +27,7 @@ def pretty_date(_time=False):
     now = datetime.now(timezone('UTC'))
 
     if type(_time) is int or type(_time) is long:
-        diff = now - datetime.fromtimestamp(mktime(gmtime(_time))).replace(tzinfo=pytz.utc)
+        diff = now - datetime.utcfromtimestamp(_time).replace(tzinfo=pytz.utc)
     elif isinstance(_time, datetime):
         diff = now - _time
     elif not _time:
